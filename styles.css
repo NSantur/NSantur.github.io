@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Khula", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fae100;
+}
+
+.start {
+  padding: 0.1rem 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 9px;
+  box-shadow: 0 0 0 60px #2a333d inset, 0.1em 0.1em 0.2em #475462;
+  transition: all 0.2s ease;
+  background: linear-gradient(#2a333d, #313d4b 38%, #475462 62%, #2c343d);
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.start:hover {
+  border: 2px solid #fae100;
+  box-shadow: 0 0 9px #fae100;
+  color: #fae100;
+  text-shadow: 0 0 5px #fae100;
+}
+
+h1 {
+  line-height: 1.5;
+  font-size: 4rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+  font-size: medium;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  /* background-color: transparent; */
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #c0c0c0;
+  border-radius: 9px;
+  box-shadow: 0 0 0 60px #2a333d inset, 0.1em 0.1em 0.2em #475462;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: linear-gradient(#2a333d, #313d4b 38%, #475462 62%, #2c343d);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.time-btn:hover {
+  border: 2px solid #fae100;
+  box-shadow: 0 0 9px #fae100;
+  color: #fae100;
+  text-shadow: 0 0 5px #fae100;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #fae100;
+}
+
+.board {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+}
+
+.point {
+  /* background: linear-gradient(90deg, #1e9cf7 0%, #1e9cf7 47%, #1e9cf7 100%); */
+  position: absolute;
+  box-shadow: 0 0 10px #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.point:hover {
+  box-shadow: 0 0 20px #fff;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+}
+
+.result-zero {
+  border-radius: 8px;
+  background: url("https://media.tenor.com/images/feaf12766729203102baa2feb79c87db/tenor.gif");
+  background-repeat: no-repeat;
+}
+
+.result-win {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  background: url("https://media.tenor.com/images/7cbc1f2cf5f3ba7b9ca161bc6d9cd967/tenor.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reload {
+  width: 78%;
+  padding: 1rem 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 9px;
+  /* background-color: transparent; */
+  box-shadow: 0 0 0 60px #2a333d inset, 0.1em 0.1em 0.2em #475462;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: linear-gradient(#2a333d, #313d4b 38%, #475462 62%, #2c343d);
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.reload:hover {
+  box-shadow: 0 0 9px #fae100;
+  text-shadow: 0 0 5px #fae100;
+}
